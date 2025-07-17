@@ -1,3 +1,4 @@
+import React from "react";
 import type { IHighlight } from "./react-pdf-highlighter";
 
 interface Props {
@@ -71,8 +72,8 @@ export function Sidebar({
         ))}
       </ul>
       <div style={{ padding: "1rem" }}>
-        <button type="button" onClick={toggleDocument}>
-          Toggle PDF document
+        <button type="button" onClick={toggleDocument} disabled>
+          Toggle PDF document (disabled)
         </button>
       </div>
       {highlights.length > 0 ? (
